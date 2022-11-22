@@ -12,7 +12,7 @@ import java.util.List;
 public class UserDaoImpl implements UserDao {
 
     @PersistenceContext
-    EntityManager entityManager;
+    private EntityManager entityManager;
 
     @Override
     public List<User> showAll() {
@@ -36,6 +36,8 @@ public class UserDaoImpl implements UserDao {
 
     @Override
     public void delete(int id) {
-        entityManager.remove(show(id));
+        if (show(id) != null) {
+            entityManager.remove(show(id));
+        }
     }
 }

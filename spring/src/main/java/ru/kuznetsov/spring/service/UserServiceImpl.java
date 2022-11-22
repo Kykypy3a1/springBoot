@@ -5,7 +5,6 @@ import org.springframework.transaction.annotation.Transactional;
 import ru.kuznetsov.spring.dao.UserDao;
 import ru.kuznetsov.spring.model.User;
 
-
 import java.util.List;
 
 @Service

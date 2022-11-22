@@ -2,7 +2,6 @@ package ru.kuznetsov.spring.service;
 
 import ru.kuznetsov.spring.model.User;
 
-
 import java.util.List;
 
 public interface UserService {
